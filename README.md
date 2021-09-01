@@ -20,7 +20,7 @@ For the examples, the variable `ORIGIN` is used with the following values, when 
 ```
 docker-compose up --no-log-prefix 2>/dev/null | grep "ORIGIN" | sed -E "s/^.*=//g"
 ```
-Without a `.env`, it will return `docker` since the Makefile is bypassed.
+Without a `.env`, it will return `docker` since the Makefile is bypassed.   
 With a `.env`, it will return `dotenv` because `.env` have precedence over default values.
 
 ---
@@ -28,7 +28,7 @@ With a `.env`, it will return `dotenv` because `.env` have precedence over defau
 ```
 make docker
 ```
-Without a `.env`, it will return `make` because it's the makefile default value.
+Without a `.env`, it will return `make` because it's the makefile default value.   
 With a `.env`, it will return `dotenv` because `.env` have precedence over default values.
 
 ---
