@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  test:
+    image: alpine
+    command: printenv
+    environment:
+      - ORIGIN=${ORIGIN:-docker}
